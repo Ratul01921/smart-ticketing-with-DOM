@@ -17,10 +17,10 @@
     <!-- Font Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- Link: Fontawesome CDN -->
+    <!-- Link: Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
 
-    <!-- Link: TailwindCSS CDN -->
+    <!-- Link: TailwindCSS and Daisy UI  CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -45,7 +45,107 @@
         }
     </script>
 </head>
-<body>
+<body class="font-RaleWay scroll-smooth">
+    <!-- Header Section Start here -->
+    <header class="w-11/12 mx-auto">
+        <!-- Navigation Menu section -->
+        <nav class="flex justify-between items-center py-2 relative">
+            <div>
+                <img width="150" src="./assets/logo.jpg" alt="" />
+            </div>
+            <ul class="sm:flex hidden gap-5">
+                <li>
+                    <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Home</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">About Us</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Destination</a>
+                </li>
+                <li>
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Search</a>
+                </li>
+                <li class="md:hidden lg:block">
+                    <a class="font-semibold text-lg hover:text-primary transition-colors duration-200 ease-in-out"
+                        href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-5">
+                <button
+                    class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary hover:bg-transparent">
+                    <span>Bus</span>
+                    <i class="fa-solid fa-van-shuttle"></i>
+                </button>
+                <button id="menu-btn" class="sm:hidden block">
+                    <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
+                    <i id="close-icon"
+                        class="fa-solid fa-xmark sm:block hidden text-2xl bg-primary px-3 py-2 rounded"></i>
+                </button>
+            </div>
+            <ul id="mobileMenu"
+                class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto z-50">
+                <li class="hover:bg-primary py-2 rounded text-primary hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Home</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">About Us</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Destination</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Search</a>
+                </li>
+                <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                    <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Home Banner content -->
+        <section id="banner-section" class="my-5 z-0">
+            <!-- Slide 01 -->
+            <div
+                class="bg-[url(./assets/slide01.jpg)] overflow-hidden h-[75vh] bg-center bg-no-repeat bg-cover rounded-2xl relative">
+                <div class="absolute top-0 left-0 w-full h-full bg-black/45"></div>
+
+                <div class="w-full h-full flex flex-col justify-center items-center absolute top-0 left-0 z-20">
+                    <!-- slider content -->
+                    <div class="absolute text-white text-center">
+                        <h2 class="lg:text-6xl md:text-5xl text-3xl font-extrabold flex flex-col">
+                            <span class="">End-to-End Travel with</span>
+                            <span class="text-primary">Dublin bus</span>
+                        </h2>
+                        <p class="my-5 sm:w-4/6 w-11/12 mx-auto font-Inter sm:text-lg text-base font-normal">
+                            Yes, you can run unit tests and view the results directly within
+                            the app. The integrated testing features allow for a streamlined
+                            .
+                        </p>
+                        <button
+                            class="btn btn-primary bg-primary text-secondary border-primary hover:border-primary hover:text-primary font-extrabold uppercase text-secondary hover:bg-transparent">
+                            Buy Tickets
+                        </button>
+                    </div>
+
+                    <!-- slider navigation -->
+                    <div class="sm:flex items-center justify-between w-full lg:px-10 md:px-5 hidden">
+                        <button
+                            class="btn rounded-full bg-primary border-primary hover:bg-transparent transition-colors duration-200 ease-in-out hover:text-primary hover:border-primary">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+                        <button
+                            class="btn rounded-full bg-primary border-primary hover:bg-transparent transition-colors duration-200 ease-in-out hover:text-primary hover:border-primary">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 
     
 
